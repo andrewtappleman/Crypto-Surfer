@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Cryptocurrency Explorer</title>
+    
+    <style>
+    body{
+        background-color: powderblue;
+    }
+    
+    select {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-family: verdana;
+    }
+    
+    button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-family: verdana;
+    }
+
+    h1  {
+    font-size: 230%;
+    font-family: verdana;
+    }
+
+    p   {
+    font-size: 125%;
+    font-family: verdana;
+    }
+
+    h2  {
+    font-size: 180%;
+    font-family: verdana;
+    }
+    
+    h3  {
+    font-size: 135%;
+    font-family: verdana;
+    }
+    </style>
+    
+    <script>
+        async function fetchCryptoSearch() {
+            const response = await fetch('/api/crypto');
+            const data = await response.json();
+            
+            var drdoVal = document.getElementById("currencies_drdo");
+            var textVal = drdoVal.options[drdoVal.selectedIndex].text;
+            var actVal = drdoVal.value;
+            console.log(actVal, textVal)
+            
+            const cryptoList = {
+                actVal: textVal
+            };
+
+            let output = '';
+
+            output += `<h3>${textVal}: $${data[actVal].usd}</h3>`;
+
+            document.getElementById('crypto-find').innerHTML = output;
+        }
+    </script>
+    
+    
+    <script>
+        async function fetchCryptoData() {
+            const response = await fetch('/api/crypto');
+            const data = await response.json();
+
+            const cryptoList = {
+                'bitcoin': 'Bitcoin',
+                'ethereum': 'Ethereum',
+                'tether': 'Tether',
+                'binancecoin': 'Binance Coin',
+                'ripple': 'XRP',
+                'usd-coin': 'USD Coin',
+                'cardano': 'Cardano',
+                'solana': 'Solana',
+                'dogecoin': 'Dogecoin',
+                'tron': 'TRON',
+                'litecoin': 'Litecoin',
+                'polkadot': 'Polkadot',
+                'avalanche-2': 'Avalanche',
+                'chainlink': 'Chainlink',
+                'matic-network': 'Polygon',
+                'shiba-inu': 'Shiba Inu',
+                'wrapped-bitcoin': 'Wrapped Bitcoin',
+                'dai': 'Dai',
+                'bitcoin-cash': 'Bitcoin Cash',
+                'stellar': 'Stellar',
+                'uniswap': 'Uniswap',
+                'monero': 'Monero',
+                'toncoin': 'Toncoin',
+                'cosmos': 'Cosmos Hub',
+                'okb': 'OKB',
+                'leo-token': 'LEO Token',
+                'ethereum-classic': 'Ethereum Classic',
+                'internet-computer': 'Internet Computer',
+                'algorand': 'Algorand',
+                'filecoin': 'Filecoin',
+                'vechain': 'VeChain',
+                'aave': 'Aave',
+                'eos': 'EOS',
+                'tezos': 'Tezos',
+                'theta-token': 'Theta Network',
+                'zcash': 'Zcash',
+                'neo': 'Neo',
+                'huobi-token': 'Huobi Token',
+                'pancakeswap-token': 'PancakeSwap',
+                'fantom': 'Fantom',
+                'maker': 'Maker',
+                'iota': 'IOTA',
+                'the-graph': 'The Graph',
+                'bittorrent': 'BitTorrent',
+                'havven': 'Synthetix Network',
+                'compound-governance-token': 'Compound',
+                'dash': 'Dash',
+                'decentraland': 'Decentraland',
+                'chiliz': 'Chiliz',
+                'enjincoin': 'Enjin Coin'
+            };
+
+            let output = '';
+            for (const [id, name] of Object.entries(cryptoList)) {
+                if (data[id]) {
+                    output += `<p>${name}: $${data[id].usd}</p>`;
+                }
+            }
+
+            document.getElementById('crypto-prices').innerHTML = output;
+        }
+        
+        window.onload = fetchCryptoData;
+        
+    </script>
+
+</head>
+<body>
+    <h1>Cryptocurrency Values</h1>
+    <select name="Cryptocurrencies" id="currencies_drdo" style = "width: 200px" style = "height: 75px">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="ethereum">Ethereum</option>
+    <option value="tether">Tether</option>
+    <option value="binancecoin">Binance Coin</option>
+    <option value="ripple">XRP</option>
+    <option value="usd-coin">USD Coin</option>
+    <option value="cardano">Cardano</option>
+    <option value="solana">Solana</option>
+    <option value="dogecoin">Dogecoin</option>
+    <option value="tron">TRON</option>
+    <option value="litecoin">Litecoin</option>
+    <option value="polkadot">Polkadot</option>
+    <option value="avalanche-2">Avalanche</option>
+    <option value="chainlink">Chainlink</option>
+    <option value="matic-network">Polygon</option>
+    <option value="shiba-inu">Shibu Inu</option>
+    <option value="wrapped-bitcoin">Wrapped Bitcoin</option>
+    <option value="dai">Dai</option>
+    <option value="bitcoin-cash">Bitcoin Cash</option>
+    <option value="stellar">Stellar</option>
+    <option value="uniswap">Uniswap</option>
+    <option value="monero">Monero</option>
+    <option value="toncoin">Toncoin</option>
+    <option value="cosmos">Cosmos Hub</option>
+    <option value="okb">OKB</option>
+    <option value="leo-token">LEO Token</option>
+    <option value="ethereum-classic">Ethereum Classic</option>
+    <option value="internet-computer">Internet Computer</option>
+    <option value="algorand">Algorand</option>
+    <option value="filecoin">Filecoin</option>
+    <option value="vechain">VeChain</option>
+    <option value="aave">Aave</option>
+    <option value="eos">EOS</option>
+    <option value="tezos">Tezos</option>
+    <option value="theta-token">Theta Network</option>
+    <option value="zcash">Zcash</option>
+    <option value="neo">Neo</option>
+    <option value="huobi-token">Huobi Token</option>
+    <option value="pancakeswap-token">PancakeSwap</option>
+    <option value="fantom">Fantom</option>
+    <option value="maker">Maker</option>
+    <option value="iota">IOTA</option>
+    <option value="the-graph">The Graph</option>
+    <option value="bittorrent">BitTorrent</option>
+    <option value="havven">Synthetix Network</option>
+    <option value="compound-governance-token">Compound</option>
+    <option value="dash">Dash</option>
+    <option value="decentraland">Decentraland</option>
+    <option value="chiliz">Chiliz</option>
+    <option value="enjincoin">Enjin Coin</option>
+    
+    
+</select>
+    
+    <button onclick = "fetchCryptoSearch()">Search</button>
+    <div id = "crypto-find"><h3>Use dropdown for specific search...</h3></div>
+    <div id="crypto-prices">Loading prices...</div>
+    
+    
+</body>
+</html>

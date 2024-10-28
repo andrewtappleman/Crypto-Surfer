@@ -1,0 +1,149 @@
+{
+    "aave": {
+        "usd": 149.67
+    },
+    "algorand": {
+        "usd": 0.116597
+    },
+    "avalanche-2": {
+        "usd": 25.86
+    },
+    "binancecoin": {
+        "usd": 596.73
+    },
+    "bitcoin": {
+        "usd": 69469
+    },
+    "bitcoin-cash": {
+        "usd": 362.32
+    },
+    "bittorrent": {
+        "usd": 8.65975e-07
+    },
+    "cardano": {
+        "usd": 0.341739
+    },
+    "chainlink": {
+        "usd": 11.0
+    },
+    "chiliz": {
+        "usd": 0.060779
+    },
+    "compound-governance-token": {
+        "usd": 42.75
+    },
+    "cosmos": {
+        "usd": 4.38
+    },
+    "dai": {
+        "usd": 0.999455
+    },
+    "dash": {
+        "usd": 22.57
+    },
+    "decentraland": {
+        "usd": 0.294032
+    },
+    "dogecoin": {
+        "usd": 0.157084
+    },
+    "enjincoin": {
+        "usd": 0.143389
+    },
+    "eos": {
+        "usd": 0.450912
+    },
+    "ethereum": {
+        "usd": 2508.38
+    },
+    "ethereum-classic": {
+        "usd": 18.72
+    },
+    "fantom": {
+        "usd": 0.679143
+    },
+    "filecoin": {
+        "usd": 3.57
+    },
+    "havven": {
+        "usd": 1.36
+    },
+    "huobi-token": {
+        "usd": 0.54255
+    },
+    "internet-computer": {
+        "usd": 7.75
+    },
+    "iota": {
+        "usd": 0.110582
+    },
+    "leo-token": {
+        "usd": 6.03
+    },
+    "litecoin": {
+        "usd": 70.4
+    },
+    "maker": {
+        "usd": 1109.66
+    },
+    "matic-network": {
+        "usd": 0.320116
+    },
+    "monero": {
+        "usd": 160.14
+    },
+    "neo": {
+        "usd": 9.51
+    },
+    "okb": {
+        "usd": 38.75
+    },
+    "pancakeswap-token": {
+        "usd": 1.78
+    },
+    "polkadot": {
+        "usd": 4.08
+    },
+    "ripple": {
+        "usd": 0.51786
+    },
+    "shiba-inu": {
+        "usd": 1.769e-05
+    },
+    "solana": {
+        "usd": 175.98
+    },
+    "stellar": {
+        "usd": 0.093712
+    },
+    "tether": {
+        "usd": 0.999166
+    },
+    "tezos": {
+        "usd": 0.639038
+    },
+    "the-graph": {
+        "usd": 0.151774
+    },
+    "theta-token": {
+        "usd": 1.16
+    },
+    "tron": {
+        "usd": 0.163874
+    },
+    "uniswap": {
+        "usd": 7.66
+    },
+    "usd-coin": {
+        "usd": 0.999666
+    },
+    "vechain": {
+        "usd": 0.0217695
+    },
+    "wrapped-bitcoin": {
+        "usd": 69392
+    },
+    "zcash": {
+        "usd": 38.23
+    }
+}
