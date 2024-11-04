@@ -1,0 +1,113 @@
+<html>
+
+<head>
+	<title>Well Known Cryptocurrencies</title>
+	<style>
+    body{
+        background-color: powderblue;
+    }
+   
+    select {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-family: verdana;
+    }
+   
+    button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-family: verdana;
+		background-color: #20eef5;
+    }
+
+    h1  {
+    font-size: 230%;
+    font-family: verdana;
+    }
+
+    p   {
+    font-size: 125%;
+    font-family: verdana;
+    }
+
+    h2  {
+    font-size: 180%;
+    font-family: verdana;
+    }
+   
+    h3  {
+    font-size: 135%;
+    font-family: verdana;
+    }
+	</style>
+    
+    <script>
+        function CheckServerHome() {
+            fetch('/page2', { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '/home';
+                    } else {
+                        window.location.href = 'Home.html';
+                    }
+                })
+                .catch(() => {
+                    window.location.href = 'Home.html';
+                });
+        }
+    </script>
+    
+</head>
+
+
+<body>
+
+	<center><h1>Well Known Cryptocurrencies</h1>
+	<a href = "http://127.0.0.1:5000/">
+    <button>Find Currency Value</button>
+    </a>
+    
+    <br>
+    
+    <button onclick = "CheckServerHome()">Return to Home</button>
+	
+	
+	<h2>BitCoin</h2>
+	<p>One BitCoin is currently worth $68090.79, based on how the stock market is doing.  BitCoin started in 2008 and was worth next to nothing, you could buy two pizzas for 10,000 BitCoin.</p>
+	</center>
+	<marquee scrollamount = "11"><img src = "https://th.bing.com/th/id/OIP.7PAilPKYh0RF2kiynjo-pQHaEo?rs=1&pid=ImgDetMain" width = 220 height = 130 alt = "BitCoin Img"></marquee>
+	<br>
+	
+	<center><h2>Ethereum</h2></center>
+	<center><p>One Ethereum is currently worth $2546, and is the second most popular cryptocurrency to BitCoin.  Ethereum was introduced in 2015 and capped at $317,000,000.</p></center>
+	
+	<marquee scrollamount = "11"><img src = "https://johnbabikian.com/wp-content/uploads/2023/04/Explainer-What-Is-Ethereum-scaled.jpg" width = 180 height = 118 alt = "Etheruem Img"></marquee>
+	<br>
+	
+	<center><h2>Binance Coin</h2></center>
+	<center><p>One Binance Coin is currently worth $593.96.  Binance Coin was created in 2017 and capped at $87 Billion.</p></center>
+	
+	<marquee scrollamount = "11"><img src = "https://th.bing.com/th/id/OIP.W2P8GzaxYuaYqSX_wBonfAHaHa?w=161&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" width = 200 height = 200 alt = "Binance Img"></marquee>
+	<br>
+	
+	<center><h2>Solana</h2></center>
+	<center><p>One Solana is currently worth $177.30.  Solana was created in 2020, capped at $75 Billion, and can process 50,000 transactions per second.</p></center>
+	
+	<marquee scrollamount = "11"><img src = "https://th.bing.com/th/id/OIP.x3_ZtKAWqVP2voWT56FJpgHaEK?w=259&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7" width = 275 height = 183 alt = "Solana Img"></marquee>	
+	<br>
+	
+	<center><h2>Dogecoin</h2></center>
+	<center><p>One Dogecoin is currently worth $0.15.  Solana was created in 2013, capped at $21.5 Billion at 73 cents per Dogecoin.</p></center>
+	
+	<marquee scrollamount = "11"><img src = "https://th.bing.com/th/id/OIP.Hok4dlWhGczg9V99Q-0XrwHaGR?rs=1&pid=ImgDetMain" width = 275 height = 183 alt = "Dogecoin Img"></marquee>
+	<br>
+	
+	<center><h2>Toncoin</h2></center>
+	<center><p>One Toncoin is currently worth $4.97.  Toncoin was created in 2018, capped at $12.65 Billion.  It was first developed by Telegram.</p></center>
+	
+	<marquee scrollamount = "11"><img src = "https://static.vecteezy.com/system/resources/previews/024/093/454/original/toncoin-ton-glass-crypto-coin-3d-illustration-free-png.png" width = 200 height = 200 alt = "Solana Img"></marquee>
+	
+</body>
+</html>

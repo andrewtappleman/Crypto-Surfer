@@ -1,0 +1,88 @@
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: powderblue;
+        }
+    
+        select {
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            font-family: verdana;
+        }
+    
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            font-family: verdana;
+            background-color: #20eef5;
+        }
+    
+        h1  {
+            font-size: 230%;
+            font-family: verdana;
+        }
+    
+        p   {
+            font-size: 125%;
+            font-family: verdana;
+        }
+    
+        h2  {
+            font-size: 180%;
+            font-family: verdana;
+        }
+    
+        h3  {
+            font-size: 135%;
+            font-family: verdana;
+        }
+    </style>
+    
+    <script>
+        function CheckServer2() {
+            fetch('/page2', { method: 'HEAD' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '/page2';
+                    } else {
+                        window.location.href = 'Page 2.html';
+                    }
+                })
+                .catch(() => {
+                    window.location.href = 'Page 2.html';
+                });
+        }
+    </script>
+    
+</head>
+
+<body>
+    <center><h1><b>Home</b></h1>
+    
+    <a href = "http://127.0.0.1:5000/">
+    <button>Find Currency Value</button>
+    </a>
+    
+    <br>
+    <br>
+
+    <button onclick = "CheckServer2()">View Popular Currencies</button>
+    
+    
+    <p>The background aims to capture and communicate the essence and purpose of cryptocurrency, designed to make complex digital finance concepts visually accessible. Prominent cryptocurrency symbols, like Bitcoin’s “B” and Ethereum’s logo, are at the center, representing the leading digital assets that have become synonymous with the crypto market. The coins are stylized with metallic and digital textures, conveying both the tangible value and digital nature of these currencies.
+
+Interwoven with the coins are intricate, glowing lines that span the background, forming a network to illustrate blockchain technology—the decentralized system that underpins cryptocurrencies. These lines connect and converge across the image, symbolizing the peer-to-peer network where transactions occur without central authority, providing transparency and security.
+
+In the background, streams of binary code and data points flow continuously, suggesting the non-stop, real-time nature of cryptocurrency transactions and exchanges. This subtle yet constant movement hints at the activity within the blockchain, as data is processed, verified, and stored across millions of nodes. 
+
+The color palette emphasizes neon blues, greens, and occasional golds, set against a dark, sleek base. These colors evoke a feeling of modern technology and trust, aligned with the digital-first and forward-thinking nature of cryptocurrencies. The design purposefully blends clarity with sophistication, aiming to present cryptocurrency as both approachable and innovative. This makes the background ideal for applications in educational materials, fintech presentations, crypto-trading platforms, and any content geared toward demystifying digital finance for both novice and experienced audiences alike.(ChatGPT generated summary, not code)</p></center>
+
+<marquee scrollamount = 13><img src = "https://th.bing.com/th/id/OIP.BXHxKTqXYSxOlG08YcMwUAHaHZ?w=193&h=192&c=7&r=0&o=5&dpr=1.4&pid=1.7" alt = "Home BTC img" width = 300 height = 300></marquee>
+
+
+</body>
