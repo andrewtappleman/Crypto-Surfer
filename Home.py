@@ -15,7 +15,7 @@ def index():
 def Page2():
     return render_template('Page 2.html')
     
-        
+
         
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
