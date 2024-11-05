@@ -1,149 +1,149 @@
 {
     "aave": {
-        "usd": 132.8
+        "usd": 135.14
     },
     "algorand": {
-        "usd": 0.109388
+        "usd": 0.114313
     },
     "avalanche-2": {
-        "usd": 23.53
+        "usd": 24.0
     },
     "binancecoin": {
-        "usd": 557.29
+        "usd": 564.24
     },
     "bitcoin": {
-        "usd": 68720
+        "usd": 69488
     },
     "bitcoin-cash": {
-        "usd": 340.19
+        "usd": 342.41
     },
     "bittorrent": {
-        "usd": 8.13099e-07
+        "usd": 8.17339e-07
     },
     "cardano": {
-        "usd": 0.333865
+        "usd": 0.335317
     },
     "chainlink": {
-        "usd": 10.75
+        "usd": 10.81
     },
     "chiliz": {
-        "usd": 0.055357
+        "usd": 0.057056
     },
     "compound-governance-token": {
         "usd": 40.64
     },
     "cosmos": {
-        "usd": 3.97
+        "usd": 4.18
     },
     "dai": {
-        "usd": 0.999575
+        "usd": 1.001
     },
     "dash": {
-        "usd": 21.82
+        "usd": 21.96
     },
     "decentraland": {
-        "usd": 0.269836
+        "usd": 0.273256
     },
     "dogecoin": {
-        "usd": 0.151528
+        "usd": 0.168975
     },
     "enjincoin": {
-        "usd": 0.130016
+        "usd": 0.1334
     },
     "eos": {
-        "usd": 0.415801
+        "usd": 0.423723
     },
     "ethereum": {
-        "usd": 2455.53
+        "usd": 2428.15
     },
     "ethereum-classic": {
-        "usd": 17.78
+        "usd": 18.23
     },
     "fantom": {
-        "usd": 0.597973
+        "usd": 0.579385
     },
     "filecoin": {
-        "usd": 3.34
+        "usd": 3.4
     },
     "havven": {
-        "usd": 1.28
+        "usd": 1.29
     },
     "huobi-token": {
-        "usd": 0.515839
+        "usd": 0.529079
     },
     "internet-computer": {
-        "usd": 7.18
+        "usd": 7.4
     },
     "iota": {
-        "usd": 0.10643
+        "usd": 0.107788
     },
     "leo-token": {
-        "usd": 6.06
+        "usd": 6.05
     },
     "litecoin": {
-        "usd": 66.84
+        "usd": 66.23
     },
     "maker": {
-        "usd": 1175.52
+        "usd": 1124.09
     },
     "matic-network": {
-        "usd": 0.300866
+        "usd": 0.302505
     },
     "monero": {
-        "usd": 156.59
+        "usd": 158.57
     },
     "neo": {
-        "usd": 9.05
+        "usd": 9.26
     },
     "okb": {
-        "usd": 37.4
+        "usd": 37.87
     },
     "pancakeswap-token": {
         "usd": 1.61
     },
     "polkadot": {
-        "usd": 3.79
+        "usd": 3.89
     },
     "ripple": {
-        "usd": 0.502507
+        "usd": 0.514415
     },
     "shiba-inu": {
-        "usd": 1.69e-05
+        "usd": 1.773e-05
     },
     "solana": {
-        "usd": 162.4
+        "usd": 166.48
     },
     "stellar": {
-        "usd": 0.090572
+        "usd": 0.093608
     },
     "tether": {
-        "usd": 0.999839
+        "usd": 1.001
     },
     "tezos": {
-        "usd": 0.598666
+        "usd": 0.61237
     },
     "the-graph": {
-        "usd": 0.136531
+        "usd": 0.138983
     },
     "theta-token": {
-        "usd": 1.053
+        "usd": 1.085
     },
     "tron": {
-        "usd": 0.165028
+        "usd": 0.16037
     },
     "uniswap": {
-        "usd": 7.05
+        "usd": 7.14
     },
     "usd-coin": {
-        "usd": 0.99973
+        "usd": 1.001
     },
     "vechain": {
-        "usd": 0.01975677
+        "usd": 0.02011875
     },
     "wrapped-bitcoin": {
-        "usd": 68693
+        "usd": 69460
     },
     "zcash": {
-        "usd": 37.3
+        "usd": 38.22
     }
 }
